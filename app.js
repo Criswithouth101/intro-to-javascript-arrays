@@ -204,8 +204,10 @@ for (let i = 0; i < nums.length; i++)
     { 
     if (nums[i] % 3 === 0 ) {
         fizz.push(nums[i]);
-       }
-    if (nums[i] % 5 === 0 ) {
+       } 
+       //reminder operator (%) : when something is divisible by a number, the remainder after dividing is 0
+      // === 0 is what the remainder should be (that we want 0) 
+       if (nums[i] % 5 === 0 ) {
         buzz.push(nums[i]);
        }
        if ((nums[i] % 3 === 0) & (nums[i] % 5 === 0) ) {
